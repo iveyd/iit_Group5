@@ -1,0 +1,88 @@
+    input {
+      width: 90%;
+      margin-bottom: 5px;
+    }
+    #login {
+      background-color: lightgrey;
+      width: 400px;
+      padding: .5em;
+      margin: 1em auto;
+    }
+    #mainContainer {
+      width: 100%;
+      min-height: 80%;
+      background-color: white;
+      border: 1px solid black;
+      margin: 1em 0;
+      padding: 1em;
+      float: left;
+      clear: left;
+    }
+    #trashCan {
+      width: 200px;
+      height: 100px;
+      margin: 1em;
+      float: right;
+    }
+    #listGen {
+      border: 1px solid black;
+      width: 200px;
+      height: 100px;
+      margin: 1em;
+    }
+    .listObject, #listGen {
+      background-color: lightslategrey;
+      float: left;
+      display: inline;
+      width: 30%;
+    }
+    .itemObject {
+      background-color: lightyellow;
+    }
+    .attrObject {
+      background-color: orange;
+    }
+    .itemObject, .listObject, .attrObject {
+      border: 1px solid black;
+      display: inline-block;
+      min-height: 40%;
+      position: relative;
+      top: 0;
+      padding: 10px;
+      margin: 10px;
+    }
+    .itemObject, .attrObject {
+      width: 90%;
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
